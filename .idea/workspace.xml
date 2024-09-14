@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b36f89-2448-43ad-8327-55623d24bbd2" name="Changes" comment="Package structure clean">
+    <list default="true" id="c4b36f89-2448-43ad-8327-55623d24bbd2" name="Changes" comment="added parameterized test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connect4.pom" beforeDir="false" afterPath="$PROJECT_DIR$/Connect4.pom" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726347792812</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added parameterized test">
+      <option name="closed" value="true" />
+      <created>1726348171585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726348171585</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +294,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base Java Structure for POM dependencies" />
     <MESSAGE value="Package structure clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Package structure clean" />
+    <MESSAGE value="added parameterized test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added parameterized test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
