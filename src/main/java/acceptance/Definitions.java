@@ -1,8 +1,10 @@
+package acceptance;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Stepdefs {
+public class Definitions {
     @Given("a vertical grid with {int} columns and {int} rows is created")
     public void a_vertical_grid_with_columns_and_rows_is_created(Integer int1, Integer int2) {
         // Write code here that turns the phrase above into concrete actions

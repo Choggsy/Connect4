@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Connect4-Backup" />
+        <module name="Connect4" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Connect4" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>
