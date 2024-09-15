@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b36f89-2448-43ad-8327-55623d24bbd2" name="Changes" comment="next time add cucumber dependencies and write connect4 scenario">
+    <list default="true" id="c4b36f89-2448-43ad-8327-55623d24bbd2" name="Changes" comment="next time  write connect4 scenario then extract out cucumber to common">
+      <change afterPath="$PROJECT_DIR$/src/acceptance/resources/connect4.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Connect4.pom" beforeDir="false" afterPath="$PROJECT_DIR$/Connect4.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connect4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Connect4.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,36 +50,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.WorldTest (1).executor": "Run",
-    "JUnit.WorldTest.executor": "Run",
-    "JUnit.WorldTest.hello.executor": "Run",
-    "Maven. [--update-snapshots].executor": "Run",
-    "Maven. [-p,--update-snapshots].executor": "Run",
-    "Maven. [clean,compile].executor": "Run",
-    "Maven. [clean,package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/cgree/OneDrive/Documents/workspace/Connect4/src/test/java",
-    "last_opened_file_path": "C:/Users/cgree/OneDrive/Documents/workspace/Connect4/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.WorldTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorldTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorldTest.hello.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [--update-snapshots].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [-p,--update-snapshots].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/cgree/OneDrive/Documents/workspace/Connect4/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cgree/OneDrive/Documents/workspace/Connect4/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cgree\OneDrive\Documents\workspace\Connect4\src" />
@@ -130,8 +130,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WorldTest" />
         <item itemvalue="JUnit.WorldTest.hello" />
+        <item itemvalue="JUnit.WorldTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +153,9 @@
       <updated>1726334867117</updated>
       <workItem from="1726334868242" duration="4557000" />
       <workItem from="1726351067247" duration="978000" />
+      <workItem from="1726352084304" duration="350000" />
+      <workItem from="1726352465537" duration="23000" />
+      <workItem from="1726408901032" duration="6363000" />
     </task>
     <task id="LOCAL-00001" summary="Base Java Structure for POM dependencies">
       <option name="closed" value="true" />
@@ -186,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726349809071</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="next time  write connect4 scenario then extract out cucumber to common">
+      <option name="closed" value="true" />
+      <created>1726352235614</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726352235614</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +219,8 @@
     <MESSAGE value="Package structure clean" />
     <MESSAGE value="added parameterized test" />
     <MESSAGE value="next time add cucumber dependencies and write connect4 scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="next time add cucumber dependencies and write connect4 scenario" />
+    <MESSAGE value="next time  write connect4 scenario then extract out cucumber to common" />
+    <option name="LAST_COMMIT_MESSAGE" value="next time  write connect4 scenario then extract out cucumber to common" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
