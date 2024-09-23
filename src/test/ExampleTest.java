@@ -8,7 +8,6 @@ import static org.assertj.core.api.Assertions.assertThatNullPointerException;
 
 class ExampleTest {
 //Few example tests to check test dependencies are working
-
     @Nested
     class Preconditions {
         @Test
