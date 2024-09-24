@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a2d7595-dde9-4f74-a467-1df8a98c04d7" name="Changes" comment="Added Not Null check to example set &amp; set up live templates">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Column.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Row.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/BoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ColumnTest.java" afterDir="false" />
+    <list default="true" id="2a2d7595-dde9-4f74-a467-1df8a98c04d7" name="Changes" comment="satrted basic objects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/acceptance/Definitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ColumnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ColumnTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,10 @@
   "keyToString": {
     "Cucumber Java.Feature: connect4.executor": "Run",
     "JUnit.BoardTest.executor": "Run",
+    "JUnit.ColumnTest.canGetValueFromColumn.executor": "Run",
+    "JUnit.ColumnTest.canGetValueFromColumn2.executor": "Run",
     "JUnit.ColumnTest.columnValueIsNotBlank.executor": "Run",
+    "JUnit.ColumnTest.executor": "Run",
     "JUnit.ExampleTest$Preconditions.nameMustNotBeNull.executor": "Run",
     "JUnit.ExampleTest.executor": "Run",
     "JUnit.WorldTest.executor": "Run",
@@ -107,7 +106,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editing.templates",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -125,31 +124,41 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ColumnTest.columnValueIsNotBlank">
-    <configuration name="Feature: connect4" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/connect4.feature" />
-      <option name="GLUE" value="acceptance" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Connect4" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: connect4" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ColumnTest.canGetValueFromColumn2">
     <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Connect4" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BoardTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColumnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Connect4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ColumnTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColumnTest.canGetValueFromColumn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Connect4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ColumnTest" />
+      <option name="METHOD_NAME" value="canGetValueFromColumn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColumnTest.canGetValueFromColumn2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Connect4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ColumnTest" />
+      <option name="METHOD_NAME" value="canGetValueFromColumn2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,32 +173,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTest$Preconditions.nameMustNotBeNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Connect4" />
-      <option name="PACKAGE_NAME" value="ExampleTest" />
-      <option name="MAIN_CLASS_NAME" value="ExampleTest$Preconditions" />
-      <option name="METHOD_NAME" value="nameMustNotBeNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Connect4" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExampleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ColumnTest.canGetValueFromColumn2" />
+        <item itemvalue="JUnit.ColumnTest.canGetValueFromColumn" />
         <item itemvalue="JUnit.ColumnTest.columnValueIsNotBlank" />
+        <item itemvalue="JUnit.ColumnTest" />
         <item itemvalue="JUnit.BoardTest" />
-        <item itemvalue="JUnit.ExampleTest" />
-        <item itemvalue="JUnit.ExampleTest$Preconditions.nameMustNotBeNull" />
-        <item itemvalue="Cucumber Java.Feature: connect4" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +201,7 @@
       <updated>1726433211777</updated>
       <workItem from="1726433213930" duration="261000" />
       <workItem from="1726433496125" duration="7287000" />
-      <workItem from="1727092575195" duration="3097000" />
+      <workItem from="1727092575195" duration="5787000" />
     </task>
     <task id="LOCAL-00001" summary="Working project structure">
       <option name="closed" value="true" />
@@ -237,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726440002645</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="satrted basic objects">
+      <option name="closed" value="true" />
+      <created>1727095840206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727095840206</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +245,8 @@
     <MESSAGE value="Working project structure" />
     <MESSAGE value="Added Main as app runner" />
     <MESSAGE value="Added Not Null check to example set &amp; set up live templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Not Null check to example set &amp; set up live templates" />
+    <MESSAGE value="satrted basic objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="satrted basic objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
