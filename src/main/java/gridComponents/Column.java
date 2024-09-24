@@ -1,7 +1,11 @@
-public class Column {
+package gridComponents;
+
+//Package-Private
+class Column {
 
     private final int value;
 
+    //make package private and have a higher class for Columns which makes the colum Range
     private Column(final int value) {
         this.value = value; //Requires no validation due to being a primitive
     }

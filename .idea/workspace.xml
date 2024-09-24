@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a2d7595-dde9-4f74-a467-1df8a98c04d7" name="Changes" comment="satrted basic objects">
+    <list default="true" id="2a2d7595-dde9-4f74-a467-1df8a98c04d7" name="Changes" comment="More validation added and finished column tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/gridComponents/ColumnRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/gridComponents/ColumnRangeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ColumnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ColumnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gridComponents/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ColumnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/gridComponents/ColumnTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +90,7 @@
   "keyToString": {
     "Cucumber Java.Feature: connect4.executor": "Run",
     "JUnit.BoardTest.executor": "Run",
+    "JUnit.ColumnRangeTest.executor": "Run",
     "JUnit.ColumnTest.canGetValueFromColumn.executor": "Run",
     "JUnit.ColumnTest.canGetValueFromColumn2.executor": "Run",
     "JUnit.ColumnTest.columnValueIsNotBlank.executor": "Run",
@@ -92,6 +98,7 @@
     "JUnit.ExampleTest$Preconditions.nameMustNotBeNull.executor": "Run",
     "JUnit.ExampleTest.executor": "Run",
     "JUnit.WorldTest.executor": "Run",
+    "JUnit.test in Connect4.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -106,38 +113,38 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.editor",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="gridComponents" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gridComponents" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="gridComponents" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ColumnTest.canGetValueFromColumn2">
-    <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ColumnRangeTest">
+    <configuration name="ColumnRangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Connect4" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BoardTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ColumnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Connect4" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ColumnTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gridComponents.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gridComponents" />
+      <option name="MAIN_CLASS_NAME" value="gridComponents.ColumnRangeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,8 +152,8 @@
     </configuration>
     <configuration name="ColumnTest.canGetValueFromColumn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Connect4" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ColumnTest" />
+      <option name="PACKAGE_NAME" value="gridComponents" />
+      <option name="MAIN_CLASS_NAME" value="gridComponents.ColumnTest" />
       <option name="METHOD_NAME" value="canGetValueFromColumn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -155,8 +162,8 @@
     </configuration>
     <configuration name="ColumnTest.canGetValueFromColumn2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Connect4" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ColumnTest" />
+      <option name="PACKAGE_NAME" value="gridComponents" />
+      <option name="MAIN_CLASS_NAME" value="gridComponents.ColumnTest" />
       <option name="METHOD_NAME" value="canGetValueFromColumn2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -165,21 +172,29 @@
     </configuration>
     <configuration name="ColumnTest.columnValueIsNotBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Connect4" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ColumnTest" />
+      <option name="PACKAGE_NAME" value="gridComponents" />
+      <option name="MAIN_CLASS_NAME" value="gridComponents.ColumnTest" />
       <option name="METHOD_NAME" value="columnValueIsNotBlank(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test in Connect4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Connect4" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ColumnRangeTest" />
+        <item itemvalue="JUnit.test in Connect4" />
         <item itemvalue="JUnit.ColumnTest.canGetValueFromColumn2" />
         <item itemvalue="JUnit.ColumnTest.canGetValueFromColumn" />
         <item itemvalue="JUnit.ColumnTest.columnValueIsNotBlank" />
-        <item itemvalue="JUnit.ColumnTest" />
-        <item itemvalue="JUnit.BoardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +216,7 @@
       <updated>1726433211777</updated>
       <workItem from="1726433213930" duration="261000" />
       <workItem from="1726433496125" duration="7287000" />
-      <workItem from="1727092575195" duration="5787000" />
+      <workItem from="1727092575195" duration="7008000" />
     </task>
     <task id="LOCAL-00001" summary="Working project structure">
       <option name="closed" value="true" />
@@ -235,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727095840206</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="More validation added and finished column tests">
+      <option name="closed" value="true" />
+      <created>1727180779474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727180779474</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +269,8 @@
     <MESSAGE value="Added Main as app runner" />
     <MESSAGE value="Added Not Null check to example set &amp; set up live templates" />
     <MESSAGE value="satrted basic objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="satrted basic objects" />
+    <MESSAGE value="More validation added and finished column tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="More validation added and finished column tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

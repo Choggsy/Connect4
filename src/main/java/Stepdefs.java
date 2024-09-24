@@ -5,7 +5,7 @@ import io.cucumber.java.en.When;
 public class Stepdefs {
     @Given("a vertical grid with {int} columns and {int} rows is created")
     public void a_vertical_grid_with_columns_and_rows_is_created(Integer int1, Integer int2) {
-        new Board(Column.create(7),Row.create(6));
+//        new Board(Column.create(7),Row.create(6));
     }
 
     @Given("a new game is created")
