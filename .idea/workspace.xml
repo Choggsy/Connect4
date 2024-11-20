@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a2d7595-dde9-4f74-a467-1df8a98c04d7" name="Changes" comment="More validation added and finished column tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gridComponents/ColumnRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/gridComponents/ColumnRangeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gridComponents/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ColumnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/gridComponents/ColumnTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="2a2d7595-dde9-4f74-a467-1df8a98c04d7" name="Changes" comment="step def refinement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/solution" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,12 +41,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature/solution" />
-                    <option name="lastUsedInstant" value="1727093289" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1732117264" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1726433254" />
+                    <option name="branchName" value="feature/solution" />
+                    <option name="lastUsedInstant" value="1727093289" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -86,37 +76,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: connect4.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BoardTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ColumnRangeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ColumnTest.canGetValueFromColumn.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ColumnTest.canGetValueFromColumn2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ColumnTest.columnValueIsNotBlank.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ColumnTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ExampleTest$Preconditions.nameMustNotBeNull.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ExampleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WorldTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test in Connect4.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/solution&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: connect4.executor": "Run",
+    "JUnit.BoardTest.executor": "Run",
+    "JUnit.ColumnRangeTest.executor": "Run",
+    "JUnit.ColumnTest.canGetValueFromColumn.executor": "Run",
+    "JUnit.ColumnTest.canGetValueFromColumn2.executor": "Run",
+    "JUnit.ColumnTest.columnValueIsNotBlank.executor": "Run",
+    "JUnit.ColumnTest.executor": "Run",
+    "JUnit.ExampleTest$Preconditions.nameMustNotBeNull.executor": "Run",
+    "JUnit.ExampleTest.executor": "Run",
+    "JUnit.WorldTest.executor": "Run",
+    "JUnit.test in Connect4.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="gridComponents" />
@@ -126,8 +116,8 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="gridComponents" />
       <recent name="" />
+      <recent name="gridComponents" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="gridComponents" />
@@ -266,7 +256,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727180779474</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made some small refinements">
+      <option name="closed" value="true" />
+      <created>1732117337545</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732117337545</updated>
+    </task>
+    <task id="LOCAL-00007" summary="step def refinement">
+      <option name="closed" value="true" />
+      <created>1732117458807</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732117458807</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +284,9 @@
     <MESSAGE value="Added Not Null check to example set &amp; set up live templates" />
     <MESSAGE value="satrted basic objects" />
     <MESSAGE value="More validation added and finished column tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="More validation added and finished column tests" />
+    <MESSAGE value="Made some small refinements" />
+    <MESSAGE value="step def refinement" />
+    <option name="LAST_COMMIT_MESSAGE" value="step def refinement" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
